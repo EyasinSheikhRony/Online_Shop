@@ -1,2 +1,11 @@
 
+/* navbar start */
+.arrow_down{
+  transition: transform 0.5s ease-in-out;
+}
+
+.arrow_down:hover {
+  transform: rotate(-180deg)
+}
+/* navbar end */
 
