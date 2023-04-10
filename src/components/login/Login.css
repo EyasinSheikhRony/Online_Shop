@@ -1,0 +1,21 @@
+.login {
+  transition: all 0.75s ease-in-out;
+}
+
+.img {
+  background-image: url("../../../public/image/pic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.form {
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+}

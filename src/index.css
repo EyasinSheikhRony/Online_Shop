@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .form_main_div {
+    @apply flex justify-start items-center
+  }
+
+  .form_div {
+    @apply w-2/6 py-6 px-8 bg-gray-100 mx-auto justify-center mt-16 rounded-xl
+  }
+
+  .form_name_div {
+    @apply flex justify-center items-center
+  }
+
+  .form_title {
+    @apply flex justify-center font-bold text-3xl font-serif text-gray-800 mb-2
+  }
+
+  .form_name {
+    @apply text-xl font-semibold mr-2 text-gray-800
+  }
+
+  .form_input {
+    @apply border-none outline-none pl-2 py-1 rounded-sm w-72 mt-2 mb-3
+  }
+
+  .name_input {
+    @apply border-none outline-none pl-2 py-1 rounded-sm w-72
+  }
+
+  .pass_label, .userName_label, .email_label {
+    @apply text-xl font-semibold mr-2 text-gray-800
+  }
+
+  .submitBtn {
+    @apply font-semibold text-lg flex mx-auto mt-[50px] bg-black font-serif text-white px-4 py-2 rounded-md items-center
+  }
+}
