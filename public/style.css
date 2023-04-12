@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 /* navbar start */
 .arrow_down{
@@ -7,5 +9,45 @@
 .arrow_down:hover {
   transform: rotate(-180deg)
 }
+
+.cart {
+  position: relative;
+}
+
+.zero {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  padding: 1px 8px;
+  background-color: rgb(68, 74, 255);
+  color: white;
+  border-radius: 100%;
+}
+
+.nav_anim {
+  position: relative;
+}
+
+.nav_anim::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  background: #000;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(0);
+}
+
+.nav_anim:hover::after {
+  transform: scaleX(1);
+}
 /* navbar end */
 
+/* Footer start  */
+.contact {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer end  */

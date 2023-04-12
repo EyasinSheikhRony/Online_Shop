@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Slider from "../slider/Slider";
+import FeaturedProduct from "../featured_product/FeaturedProduct";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
-    </div>
-  )
-}
+      <Slider />
+      <FeaturedProduct />
+    </div>)
+  }
 
 export default Home

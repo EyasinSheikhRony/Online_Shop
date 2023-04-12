@@ -1,0 +1,24 @@
+/* Featured Products start */
+.image_group {
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .fastImg {
+    z-index: 1;
+  }
+
+  &:hover {
+    .secondImg {
+      z-index: 2;
+    }
+  }
+}
+/* Featured Products end */
