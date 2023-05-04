@@ -33,7 +33,7 @@ const Signup = () => {
         {/* name field  */}
         <div className="flex justify-start items-center mb-3">
           <label htmlFor="fullName" className='form_name'>Full Name :</label>
-          <input type="text" name='fullName' id='fullName' className='name_input ml-6' placeholder='Full Name...' required value={formik.values.fullName} onChange={formik.handleChange} />
+          <input type="text" name='fullName' id='fullName' className='name_input ml-6' placeholder='Eyasin Sheikh Rony' required value={formik.values.fullName} onChange={formik.handleChange} />
         </div>
         <div className="ml-[140px] font-mono">
           {formik.errors.fullName && <span className='text-red-600'>{formik.errors.fullName}</span> && formik.touched.fullName}
@@ -42,7 +42,7 @@ const Signup = () => {
         {/* userName field  */}
         <div className="form_main_div">
           <label htmlFor="userName" className='userName_label'>User Name :</label>
-          <input type="text" name="userName" id="userName" className='form_input ml-[17px]' placeholder='User Name...' value={formik.values.userName} onChange={formik.handleChange} required />
+          <input type="text" name="userName" id="userName" className='form_input ml-[17px]' placeholder='eyasinsheikhrony' value={formik.values.userName} onChange={formik.handleChange} required />
         </div>
         <div className="ml-[140px] font-mono">
           {formik.touched.userName && formik.errors.userName && <span className='text-red-600'>{formik.errors.userName}</span> }
@@ -51,7 +51,7 @@ const Signup = () => {
         {/* email field  */}
         <div className="form_main_div">
           <label htmlFor="email" className='email_label'>Email :</label>
-          <input type="email" name="email" id="email" className='form_input ml-[68px]' placeholder='Email Here...' value={formik.values.email} onChange={formik.handleChange} required />
+          <input type="email" name="email" id="email" className='form_input ml-[68px]' placeholder='example@gmail.com' value={formik.values.email} onChange={formik.handleChange} required />
         </div>
         <div className="ml-[140px] font-mono">
           {formik.touched.email && formik.errors.email && <span className='text-red-600'>{formik.errors.email}</span> }
@@ -75,7 +75,7 @@ const Signup = () => {
           {formik.touched.rePassword && formik.errors.rePassword && <span className='text-red-600'>{formik.errors.rePassword}</span> }
         </div>
 
-        <button type="submit" className='submitBtn'>Sign Up</button>
+        <button type="submit" className='submitBtn hover:bg-white hover:text-gray-700 login'>Sign Up</button>
       </form>
     </div>
   )

@@ -70,13 +70,13 @@ const Footer = () => {
             <a href="https://www.facebook.com/EyasinSheikhRony" target='_main'>
               <img src="./social-icon/facebook.png" alt="#" className='w-7 h-7' />
             </a>
-            <a href="" target='_main'>
+            <a href="https://www.instagram.com/eyasin_sheikh_rony/" target='_main'>
               <img src="./social-icon/instagram.png" alt="#" className='w-7 h-7' />
             </a>
-            <a href="" target='_main'>
+            <a href="https://twitter.com/RonyVau2573" target='_main'>
               <img src="./social-icon/twitter.png" alt="#" className='w-7 h-7' />
             </a>
-            <a href="" target='_main'>
+            <a href="https://www.youtube.com/channel/UCkZ0sZZ4neDaicwEZdKbEnQ" target='_main'>
               <img src="./social-icon/youtube.png" alt="#" className='w-7 h-7' />
             </a>
           </div>
@@ -85,7 +85,9 @@ const Footer = () => {
       <hr className='w-[80%] mx-auto mt-8' />
       <div className="flex items-center justify-between w-[80%] mx-auto py-6">
           <div className="">
-            <img src="./image/super-sale.png" alt="#" className='w-16 h-16 bg-white' />
+            <a href="home">
+              <img src="./image/super-sale.png" alt="#" className='w-16 h-16 bg-white' />
+            </a>
           </div>
           <div className="font-sans text-sm font-medium max-[425px]:ml-[15px] max-[425px]:pt-[25px]">&copy; 2022 - {year} Online Support | All Rights Reserved.</div>
         </div>

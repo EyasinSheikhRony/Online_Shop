@@ -6,7 +6,10 @@ const Categories = () => {
   return (
     <div>
       <Products />
+      <h1 className='text-4xl font-bold text-gray-800 flex justify-center mb-8 mt-10'>New Arival</h1>
       <div className="flex mx-auto justify-center flex-wrap">
+        <div className="">
+        </div>
         <div className="row">
           <div className="col"><img src="./image/pic.jpg" alt="#" className='w-[400px] h-[300px] mb-2 mr-2 img_new' />
             <button type='submit' className='new_btn bg-white font-bold text-gray-900'>New</button>

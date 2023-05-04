@@ -4,7 +4,7 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <div>
-      <div className="mt-28 mb-8 rounded-xl py-6 w-auto mx-10 bg-gray-100 flex flex-col items-center">
+      <div className="mt-36 mb-8 rounded-xl py-6 w-[310px] md:w-[400px] lg:w-[500px] mx-auto bg-gray-100 flex flex-col items-center">
         <form action="" className=''>
           <div className="contact_us">
             <h1 className=' text-3xl font-bold text-gray-700 flex justify-center mb-8'>Contact Us</h1>

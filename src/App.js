@@ -10,6 +10,7 @@ import Footer from "./components/footer/Footer";
 import Products from "./components/products/Products";
 import Categories from "./components/categories/Categories";
 import Product from "./components/product/Product";
+import Faq from "./components/faq/Faq";
 
 export default function App() {
   let Layout = () => {
@@ -36,6 +37,10 @@ export default function App() {
           element: <Login />,
         },
         {
+          path: "/",
+          element: <Home />,
+        },
+        {
           path: "/home",
           element: <Home />,
         },
@@ -58,6 +63,10 @@ export default function App() {
         {
           path: "/categories",
           element: <Categories />,
+        },
+        {
+          path: "/faq",
+          element: <Faq />,
         },
       ],
     },

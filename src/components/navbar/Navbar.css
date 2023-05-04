@@ -57,7 +57,3 @@
   .container_drop_down2:hover .content_drop_down2 {
     display: block;
   }
-
-  .active {
-    border: 2px solid rgb(10, 204, 26);
-  }

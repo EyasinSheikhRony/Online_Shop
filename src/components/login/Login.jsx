@@ -29,7 +29,7 @@ const Login = () => {
         {/* name field  */}
           <div className="form_name_div">
           <label htmlFor="name" className='form_name'>Name :</label>
-          <input type="text" id='name' name='name' placeholder='Name Here...'
+          <input type="text" id='name' name='name' placeholder='Eyasin Sheikh Rony'
           className='name_input ml-7'
           value={formik.values.name} onChange={formik.handleChange} required />
         </div>
