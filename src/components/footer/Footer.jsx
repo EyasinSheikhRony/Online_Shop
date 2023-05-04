@@ -5,8 +5,8 @@ let year = full_date.getFullYear();
 
 const Footer = () => {
   return (
-    <div className='bg-[#1C3C68] text-white flex-wrap flex'>
-      <div className="flex flex-wrap justify-between pt-10 h-auto w-[80%] max-[768px]:w-[100%] max-[768px]:ml-10 mx-auto">
+    <div className='bg-[#1C3C68] text-white flex-wrap flex mt-24'>
+      <div className="flex flex-wrap justify-between pt-10 h-auto w-[80%] max-[425px]:w-[100%] max-[425px]:ml-10 max-[768px]: mx-auto">
         {/* discover sections  */}
         <div className="">
           <h1 className='font-bold font-sans text-2xl mb-1'>Discover</h1>
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
         {/* payment method  */}
-        <div className="mr-12 mt-6">
+        <div className="mr-12 mt-6 lg:mt-0">
           <h1 className='mb-1 font-bold font-sans text-2xl'>Payment Methods</h1>
           <hr className='mb-6' />
           <div className="">
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
         {/* contact  */}
-        <div className="mr-24 mt-6">
+        <div className="mt-6 mr-16 lg:mt-0">
           <h1 className='mb-1 font-bold font-sans text-2xl'>Contact</h1>
           <hr className='mb-6' />
           <div className="contact text-sm">
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         {/* follow us  */}
-        <div className="mt-6">
+        <div className="mt-6 min-[764px]:pr-12 xl:mt-0">
           <h1 className='mb-1 font-bold font-sans text-2xl'>Follow US</h1>
           <hr className='mb-5' />
           <div className="flex gap-2">
@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="">
             <img src="./image/super-sale.png" alt="#" className='w-16 h-16 bg-white' />
           </div>
-          <div className="font-sans text-sm font-medium max-[768px]:ml-[15px] max-[768px]:pt-[25px]">&copy; 2022 - {year} Online Support | All Rights Reserved.</div>
+          <div className="font-sans text-sm font-medium max-[425px]:ml-[15px] max-[425px]:pt-[25px]">&copy; 2022 - {year} Online Support | All Rights Reserved.</div>
         </div>
     </div>
   )

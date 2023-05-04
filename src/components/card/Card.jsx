@@ -3,8 +3,8 @@ import "./Card.scss";
 
 const Card = ({item}) => {
   return (
-    <div className='card flex flex-row shadow-xl hover:shadow-2xl rounded-lg mb-8 ml-4 mr-4'>
-      <div className="cursor-pointer  w-[300px]" >
+    <div className='card flex flex-wrap max-[1024px]:w-[100%] shadow-xl hover:shadow-2xl rounded-lg mb-8 max-[768px]:ml-[1px] max-[1024px]:ml-[2px] min-[1440px]:ml-[1px] min-[1441px]:ml-[20px] mr-1'>
+      <div className="cursor-pointer w-[300px]" >
         <p>{item.isNew && <span className='new'>New Seasion</span> }</p>
         <div className="add_btn">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" className="w-8 h-8 cursor-pointer new2 add_cart_btn">

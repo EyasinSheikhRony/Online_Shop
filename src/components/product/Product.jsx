@@ -11,8 +11,9 @@ const Product = () => {
   let [sort, setSort] = useState(null);
 
   return (
-    <div className=' mb-8 flex w-[80%] mx-auto gap-4'>
-      <div className="left w-[20%] mt-28">
+    <div className='mb-8 flex flex-wrap max-[912px]:w-[80%] max-[912px]:mx-auto w-[80%] mx-auto'>
+      {/* left side  */}
+      <div className="left w-[20%] max-[912px]:w-[80%] max-[912px]:mx-auto mt-32">
         <div className="filter_item">
           <h1 className='text-2xl font-bold text-gray-700 mb-2' >Product Categories</h1>
           <div className="input_item">
@@ -48,26 +49,9 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <div className="right w-[80%]">
+      <div className="right w-[80%] max-[912px]:w-[100%] max-[912px]:mx-auto">
+        {/* right side  */}
         <Products />
-        {/* <div className="">
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52 mb-2' />
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52 mb-2' />
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52' />
-        </div>
-
-        <div className="ml-2">
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52 mb-2' />
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52 mb-2' />
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52' />
-        </div>
-
-        <div className="ml-2">
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52 mb-2' />
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52 mb-2' />
-          <img src="./image/pic.jpg" alt="#" className='w-52 h-52' />
-        </div> */}
-        
       </div>
     </div>
   )

@@ -70,17 +70,17 @@ let data = [
 
 const Products = () => {
   return (
-    <div className="flex flex-col mt-28 ml-8">
-      <div className=''>
+    <div className="flex flex-wrap mt-32 ml-1 max-[1024px]:pl-10 max-[912px]:w-[100%] max-[912px]:mx-auto">
+      <div className='max-[912px]:w-[100%] max-[912px]:mx-auto'>
         <h1 className='font-sans text-3xl product_heading_anim text-gray-600 font-bold ml-4 mb-12'>Featured Product</h1>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap max-[912px]:w-[100%]">
         {data.map(item => <Card item={item} key={item.id} />)}
         {data.map(item => <Card item={item} key={item.id} />)}
         </div>
       </div>
 
       <div className='mt-12 mb-4'>
-        <h1 className='font-sans text-3xl product_heading_anim text-gray-600 font-bold ml-4 mb-12'>Tranding Product</h1>
+        <h1 className='font-sans text-3xl product_heading_anim text-gray-600 font-bold ml-2 mb-12'>Tranding Product</h1>
         <div className="flex flex-wrap">
         {data.map(item => <Card item={item} key={item.id} />)}
         </div>
