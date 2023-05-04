@@ -5,10 +5,11 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Product from "./components/product/Product";
-import Categories from "./components/shop/Categories";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import Products from "./components/products/Products";
+import Categories from "./components/categories/Categories";
+import Product from "./components/product/Product";
 
 export default function App() {
   let Layout = () => {
@@ -43,12 +44,16 @@ export default function App() {
           element: <About />,
         },
         {
-          path: "/contact",
-          element: <Contact />,
+          path: "/products/:id",
+          element: <Products />,
         },
         {
-          path: "/product",
+          path: "/product/",
           element: <Product />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
         {
           path: "/categories",

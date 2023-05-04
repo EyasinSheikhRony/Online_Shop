@@ -6,7 +6,7 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.arrow_down:hover {
+.categories:hover .arrow_down {
   transform: rotate(-180deg)
 }
 
@@ -16,9 +16,9 @@
 
 .zero {
   position: absolute;
-  top: -20px;
-  right: -15px;
-  padding: 1px 8px;
+  top: -15px;
+  right: -12px;
+  padding: 0px 6px;
   background-color: rgb(68, 74, 255);
   color: white;
   border-radius: 100%;
@@ -33,7 +33,7 @@
   position: absolute;
   bottom: -3px;
   background: #000;
-  height: 3px;
+  height: 2px;
   width: 100%;
   left: 0;
   transition: all 0.5s ease-in-out;

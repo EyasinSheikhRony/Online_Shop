@@ -1,0 +1,15 @@
+.product_heading_anim {
+  position: relative;
+}
+
+.product_heading_anim::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  background: rgb(232, 16, 16);
+  height: 4px;
+  width: 12%;
+  left: 2px;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}

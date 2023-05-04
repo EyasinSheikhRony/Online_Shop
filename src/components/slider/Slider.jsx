@@ -10,7 +10,7 @@ const Slider = () => {
   return (
     <div>
       {/* Slider start */}
-      <div className="">
+      <div className="mt-[85px]">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -25,11 +25,11 @@ const Slider = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[60vh] w-full" /></SwiperSlide>
-          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[60vh] w-full" /></SwiperSlide>
-          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[60vh] w-full" /></SwiperSlide>
-          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[60vh] w-full" /></SwiperSlide>
-          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[60vh] w-full" /></SwiperSlide>
+          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[40vh] w-full" /></SwiperSlide>
+          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[40vh] w-full" /></SwiperSlide>
+          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[40vh] w-full" /></SwiperSlide>
+          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[40vh] w-full" /></SwiperSlide>
+          <SwiperSlide><img src="./image/pic.jpg" alt="#" className="h-[40vh] w-full" /></SwiperSlide>
         </Swiper>
       </div>
       {/* slider end  */}

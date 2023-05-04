@@ -5,10 +5,11 @@ let year = full_date.getFullYear();
 
 const Footer = () => {
   return (
-    <div className='bg-[#1C3C68] text-white'>
-      <div className="flex justify-between pt-10 h-[30vh] w-[80%] mx-auto">
+    <div className='bg-[#1C3C68] text-white flex-wrap flex'>
+      <div className="flex flex-wrap justify-between pt-10 h-auto w-[80%] max-[768px]:w-[100%] max-[768px]:ml-10 mx-auto">
+        {/* discover sections  */}
         <div className="">
-          <h1 className=' font-bold font-sans text-2xl mb-1'>Discover</h1>
+          <h1 className='font-bold font-sans text-2xl mb-1'>Discover</h1>
           <hr className='mb-6' />
           <div className="flex">
             <div className="flex flex-col contact text-sm mr-4">
@@ -23,7 +24,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        {/* payment method  */}
+        <div className="mr-12 mt-6">
           <h1 className='mb-1 font-bold font-sans text-2xl'>Payment Methods</h1>
           <hr className='mb-6' />
           <div className="">
@@ -41,40 +43,51 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        {/* contact  */}
+        <div className="mr-24 mt-6">
           <h1 className='mb-1 font-bold font-sans text-2xl'>Contact</h1>
           <hr className='mb-6' />
           <div className="contact text-sm">
-            <p>+880 1306 333764</p>
-            <p>Rupsha, Khulna, Bangladesh</p>
-            <p>skrony2573@gmail.com</p>
+            <div className="flex items-center mb-1">
+              <i className="fa-solid fa-phone mr-2"></i>
+              <p>+880 1306 333764</p>
+            </div>
+            <div className="flex items-center mb-1">
+              <i className="fa-solid fa-location-dot mr-2"></i>
+              <p>Rupsha, Khulna, Bangladesh</p>
+            </div>
+            <div className="flex items-center mb-1">
+              <i className="fa-solid fa-envelope mr-2"></i>
+              <p>skrony2573@gmail.com</p>
+            </div>
           </div>
         </div>
-        <div className="">
+        {/* follow us  */}
+        <div className="mt-6">
           <h1 className='mb-1 font-bold font-sans text-2xl'>Follow US</h1>
-          <hr className='mb-6' />
-          <div className="flex">
+          <hr className='mb-5' />
+          <div className="flex gap-2">
             <a href="https://www.facebook.com/EyasinSheikhRony" target='_main'>
-              <img src="./social-icon/facebook.png" alt="#" className='w-12 h-12 p-2' />
+              <img src="./social-icon/facebook.png" alt="#" className='w-7 h-7' />
             </a>
             <a href="" target='_main'>
-              <img src="./social-icon/instagram.png" alt="#" className='w-12 h-12 p-2' />
+              <img src="./social-icon/instagram.png" alt="#" className='w-7 h-7' />
             </a>
             <a href="" target='_main'>
-              <img src="./social-icon/twitter.png" alt="#" className='w-12 h-12 p-2' />
+              <img src="./social-icon/twitter.png" alt="#" className='w-7 h-7' />
             </a>
             <a href="" target='_main'>
-              <img src="./social-icon/youtube.png" alt="#" className='w-12 h-12 p-2' />
+              <img src="./social-icon/youtube.png" alt="#" className='w-7 h-7' />
             </a>
           </div>
         </div>
       </div>
-      <hr className='w-[80%] mx-auto' />
+      <hr className='w-[80%] mx-auto mt-8' />
       <div className="flex items-center justify-between w-[80%] mx-auto py-6">
           <div className="">
             <img src="./image/super-sale.png" alt="#" className='w-16 h-16 bg-white' />
           </div>
-          <div className=" font-sans text-sm font-medium">&copy; 2022 - {year} Online Support | All Rights Reserved.</div>
+          <div className="font-sans text-sm font-medium max-[768px]:ml-[15px] max-[768px]:pt-[25px]">&copy; 2022 - {year} Online Support | All Rights Reserved.</div>
         </div>
     </div>
   )

@@ -1,12 +1,14 @@
 import React from "react";
 import Slider from "../slider/Slider";
-import FeaturedProduct from "../featured_product/FeaturedProduct";
+import Products from "../products/Products";
+// import Faq from "../faq/Faq";
 
 const Home = () => {
   return (
     <div>
       <Slider />
-      <FeaturedProduct />
+      {/* <Faq /> */}
+      <Products />
     </div>)
   }
 
